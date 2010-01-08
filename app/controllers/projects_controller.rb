@@ -13,7 +13,7 @@ class ProjectsController < ApplicationController
   
   def create
     @project = Project.new(params[:project])
-    if @project.save
+    if verify_recaptcha(@project) && @project.save
       flash[:notice] = "Successfully created project."
       redirect_to @project
     else
