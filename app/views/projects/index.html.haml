@@ -5,7 +5,7 @@
     %th Name
     %th Site url
     %th Description
-    %th Email
+    %th Logo
     %th Company
     %th Company url
   - for project in @projects
@@ -13,7 +13,7 @@
       %td= h project.name
       %td= h project.site_url
       %td= h project.description
-      %td= h project.email
+      %td= image_tag project.logo.url(:thumb)
       %td= h project.company
       %td= h project.company_url
       %td= link_to 'Show', project

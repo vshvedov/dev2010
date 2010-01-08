@@ -1,4 +1,4 @@
-- form_for @project do |f|
+- form_for @project, :html => { :multipart => true }  do |f|
   = f.error_messages
   %p
     = f.label :name
@@ -24,5 +24,7 @@
     = f.label :company_url
     %br
     = f.text_field :company_url
+  %p
+    =f.file_field :logo
   %p
     = f.submit "Submit"

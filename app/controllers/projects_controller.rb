@@ -22,23 +22,23 @@ class ProjectsController < ApplicationController
   end
   
   def edit
-    @project = Project.find(params[:id])
+    # @project = Project.find(params[:id])
   end
   
   def update
-    @project = Project.find(params[:id])
-    if @project.update_attributes(params[:project])
-      flash[:notice] = "Successfully updated project."
-      redirect_to @project
-    else
-      render :action => 'edit'
-    end
+    # @project = Project.find(params[:id])
+    # if @project.update_attributes(params[:project])
+    #   flash[:notice] = "Successfully updated project."
+    #   redirect_to @project
+    # else
+    #   render :action => 'edit'
+    # end
   end
   
   def destroy
-    @project = Project.find(params[:id])
-    @project.destroy
-    flash[:notice] = "Successfully destroyed project."
-    redirect_to projects_url
+    # @project = Project.find(params[:id])
+    # @project.destroy
+    # flash[:notice] = "Successfully destroyed project."
+    # redirect_to projects_url
   end
 end

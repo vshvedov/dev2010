@@ -1,6 +1,8 @@
 - title "Project"
 
 %p
+  = image_tag @project.logo.url(:medium)
+%p
   %strong Name:
   =h @project.name
 %p
@@ -20,8 +22,4 @@
   =h @project.company_url
 
 %p
-  = link_to "Edit", edit_project_path(@project)
-  |
-  = link_to "Destroy", @project, :confirm => 'Are you sure?', :method => :delete
-  |
-  = link_to "View All", projects_path
+  = link_to "Список всех проектов", projects_path
