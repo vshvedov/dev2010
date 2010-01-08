@@ -1,0 +1,15 @@
+one:
+  name: MyString
+  site_url: MyString
+  description: MyText
+  email: MyString
+  company: MyString
+  company_url: MyString
+
+two:
+  name: MyString
+  site_url: MyString
+  description: MyText
+  email: MyString
+  company: MyString
+  company_url: MyString

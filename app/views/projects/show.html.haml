@@ -1,0 +1,27 @@
+- title "Project"
+
+%p
+  %strong Name:
+  =h @project.name
+%p
+  %strong Site Url:
+  =h @project.site_url
+%p
+  %strong Description:
+  =h @project.description
+%p
+  %strong Email:
+  =h @project.email
+%p
+  %strong Company:
+  =h @project.company
+%p
+  %strong Company Url:
+  =h @project.company_url
+
+%p
+  = link_to "Edit", edit_project_path(@project)
+  |
+  = link_to "Destroy", @project, :confirm => 'Are you sure?', :method => :delete
+  |
+  = link_to "View All", projects_path

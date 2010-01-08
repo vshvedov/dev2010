@@ -1,0 +1,13 @@
+*.swp
+log/*.log
+log/*.pid
+tmp/**/*
+.DS_Store
+doc/api
+doc/app
+coverage
+db/*.sqlite3
+db/sphinx/*
+config/database.yml
+public/system/*
+.idea
