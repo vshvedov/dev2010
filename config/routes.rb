@@ -1,6 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
   map.resources :projects
-
+  map.rss '/rss', :controller => 'pages', :action => 'rss'
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:

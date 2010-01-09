@@ -1,8 +1,26 @@
 %p
   %strong
+    Всего проектов:
+    = @allprojects.size.to_s
+%p
+  %strong
+    До конца года осталось:
+    = (365 - Time.now.to_datetime.day).to_s
+    дней
+%p
+  %strong
     Последние добавленные проекты
     %br
   -for project in @projects
+    =link_to "#{h project.name}", project
+    %br
+    =image_tag project.logo.url(:thumb)
+    %br
+%p
+  %strong
+    Случайные проекты
+    %br
+  -for project in @rndprojects
     =link_to "#{h project.name}", project
     %br
     =image_tag project.logo.url(:thumb)

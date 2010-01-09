@@ -1,0 +1,20 @@
+xml.instruct!
+xml.rss "version" => "2.0", "xmlns:dc" => "http://purl.org/dc/elements/1.1/" do
+ xml.channel do
+
+   xml.title       "DEV2010.RU"
+   xml.link        url_for :only_path => false, :controller => 'projects'
+   xml.description "Все проекты рунета за 2010 год"
+
+   @projects.each do |project|
+     xml.item do
+       xml.img       image_tag project.logo.url(:thumb)
+       xml.title       project.name
+       xml.link        url_for :only_path => false, :controller => 'projects', :action => 'show', :id => project.id
+       xml.description project.description
+       xml.guid        url_for :only_path => false, :controller => 'projects', :action => 'show', :id => project.id
+     end
+   end
+ end
+end
+
