@@ -1,0 +1,9 @@
+%p
+  %strong
+    Последние добавленные проекты
+    %br
+  -for project in @projects
+    =link_to "#{h project.name}", project
+    %br
+    =image_tag project.logo.url(:thumb)
+    %br

@@ -1,4 +1,4 @@
-- title "Project"
+- title "Проект " + @project.name
 
 %p
   = image_tag @project.logo.url(:medium)
@@ -7,7 +7,7 @@
   =h @project.name
 %p
   %strong Site Url:
-  =h @project.site_url
+  =link_to @project.site_url, @project.site_url
 %p
   %strong Description:
   =h @project.description
@@ -19,7 +19,8 @@
   =h @project.company
 %p
   %strong Company Url:
-  =h @project.company_url
-
+  =link_to @project.company_url, @project.company_url
+%p
+  =link_to "В твиттер!", "http://twitter.com/home/?status="+"Мой проект+"+@project.name+"+участвует+в+%23dev2010ru+—+http://dev2010.ru/projects/" + @project.id.to_s
 %p
   = link_to "Список всех проектов", projects_path

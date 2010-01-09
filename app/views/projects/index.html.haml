@@ -19,5 +19,5 @@
       %td= link_to 'Show', project
       %td= link_to 'Edit', edit_project_path(project)
       %td= link_to 'Destroy', project, :confirm => 'Are you sure?', :method => :delete
-
+=will_paginate @projects, :prev_label => "← Туда", :next_label => "Сюда →"
 %p= link_to "New Project", new_project_path

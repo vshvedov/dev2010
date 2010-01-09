@@ -11,6 +11,7 @@
   %p
     = f.label :description
     %br
+    -# = textile_editor :description, f
     = f.text_area :description
   %p
     = f.label :email
@@ -28,5 +29,6 @@
     =f.file_field :logo
   %p
     =recaptcha_tags
+  = textile_editor_initialize
   %p
     = f.submit "Submit"

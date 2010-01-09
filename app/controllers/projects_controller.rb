@@ -1,6 +1,6 @@
 class ProjectsController < ApplicationController
   def index
-    @projects = Project.all
+    @projects = Project.paginate :page => 1, :order => 'created_at DESC'
   end
   
   def show
@@ -14,7 +14,7 @@ class ProjectsController < ApplicationController
   def create
     @project = Project.new(params[:project])
     if verify_recaptcha(@project) && @project.save
-      flash[:notice] = "Successfully created project."
+      flash[:notice] = "Проект создан! Напишите об этом в Твиттере или вашем блоге!"
       redirect_to @project
     else
       render :action => 'new'

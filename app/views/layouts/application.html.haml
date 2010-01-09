@@ -6,6 +6,7 @@
       = h(yield(:title) || "Проект dev2010 — все новые проекты рунета в 2010 году")
     %meta{"http-equiv"=>"Content-Type", :content=>"text/html; charset=utf-8"}/
     =stylesheet_link_tag 'application'
+    =javascript_include_tag :all
     = yield(:head)
   
   %body
@@ -18,4 +19,6 @@
       =link_to_unless_current "Главная", root_path
       =link_to_unless_current "Все проекты", projects_path
       =link_to_unless_current "Добавить свой проект", :controller => "projects", :action => "new"
+      =link_to "Блог", "http://blog.dev2010.ru"
+      =link_to "Твиттер", "http://twitter.com/dev2010ru"
       = yield
