@@ -1,27 +1,13 @@
-%p
-  %strong
-    Всего проектов:
-    = @allprojects.size.to_s
-%p
-  %strong
-    До конца года осталось:
-    = (365 - Time.now.to_datetime.day).to_s
-    дней
-%p
-  %strong
-    Последние добавленные проекты
-    %br
+%h2 Новые проекты
+%ul.items
   -for project in @projects
-    =link_to "#{h project.name}", project
-    %br
-    =image_tag project.logo.url(:thumb)
-    %br
-%p
-  %strong
-    Случайные проекты
-    %br
+    %li.item
+      = link_to image_tag(project.logo.url(:thumb)), project, :class => "item_image"
+      .item_link=link_to "#{h project.name}", project
+.hr
+%h2 Случайные проекты
+%ul.items
   -for project in @rndprojects
-    =link_to "#{h project.name}", project
-    %br
-    =image_tag project.logo.url(:thumb)
-    %br
+    %li.item
+      = link_to image_tag(project.logo.url(:thumb)), project, :class => "item_image"
+      .item_link=link_to "#{h project.name}", project

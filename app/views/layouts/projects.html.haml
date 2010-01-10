@@ -1,5 +1,6 @@
 !!! Strict
 %html{html_attrs}
+  
   %head
     %title
       = h(yield(:title) || "Проект dev2010 — все новые проекты рунета в 2010 году")
@@ -8,31 +9,19 @@
     =javascript_include_tag :all
     = auto_discovery_link_tag(:rss, rss_path)
     = yield(:head)
+  
   %body
     #header
       .container_12
-        .grid_4.logo= link_to "logo", "#"
-        .grid_8.top_menu
+        .grid_3.logo
+          logo
+        .grid_9.top_menu
           %ul
             %li=link_to_unless_current "Главная", root_path
             %li=link_to_unless_current "Проекты", projects_path
             %li=link_to "Блог", "http://blog.dev2010.ru"
             %li=link_to "Твиттер", "http://twitter.com/dev2010ru"
-            %li=link_to_unless_current "Добавить свой проект", {:controller => "projects", :action => "new"}, :class => "add_project"
-    #top_content
-      .container_12
-        .grid_8
-          %h1 Абсолютно сходящийся ряд, следовательно, расточительно допускает отрицательный детерминант, что известно даже школьникам. 
-          .hr
-        .grid_4
-          .grid_2
-            %p
-              = @allprojects.size.to_s
-              проектов
-          .grid_2
-            %p
-              = (365 - Time.now.to_datetime.day).to_s
-              осталось дней
+            %li=link_to_unless_current "Добавить свой проект", :controller => "projects", :action => "new"
     #content
       .container_12
         .grid_8.main
@@ -42,11 +31,8 @@
             %h1=h yield(:title)
           = yield
         .grid_4.side_bar
-          %ul.banners
-            %li= image_tag "/images/banner_300_2.jpg"
-            %li= image_tag "/images/banner_300_1.gif"
-        .hr
+          sidemenuuu
     #footer
       .container_12
         .grid_12
-          © 2010 DEV2010
+          footer

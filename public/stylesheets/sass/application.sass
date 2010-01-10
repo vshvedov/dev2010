@@ -1,13 +1,35 @@
-!primary_color = #4B7399
+!bg_color = #E5E3E6
+!text_color = #5D6066
 
 body
-  :background-color = !primary_color
+  :background-color = !bg_color
   :font
-    :family Verdana, Helvetica, Arial
+    :family "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif
     :size 14px
+  :color = !text_color
+
+h1, h2, h3, h4, h5, h6, legend
+  :font-weight normal
+  :text-shadow 0px 1px 0px #fff
+
+h1
+  :font-size 28px
+  :line-height 36px
+  :padding-bottom 18px
+
+h2
+  :font-size 24px
+  :line-height 36px
+  :padding-bottom 18px
+  :clear both
+
+h3
+  :font-size 18px
+  :line-height 18px
+  :padding-bottom 18px
 
 a
-  :color #0000FF
+  :color #3399FF
   img
     :border none
 
@@ -16,13 +38,92 @@ a
   :height 0
   :overflow hidden
 
-#container
-  :width 75%
-  :margin 0 auto
-  :background #fff
-  :padding 20px 40px
-  :border solid 1px black
-  :margin-top 20px
+#header, #content
+  :clear both
+  :margin-bottom 36px
+  :overflow hidden
+
+#header
+  :padding-top 36px
+  .top_menu ul
+    :float right
+    :margin-bottom 18px
+  .top_menu li
+    :float left
+    :font-size 16px
+  .top_menu li a
+    :font-size 16px
+    :padding 0 9px
+  .logo a
+    :background url(/images/dev2010_logo.gif) no-repeat
+    :display block
+    :height 57px
+    :text-indent -9999px
+    :width 227px
+  a.add_project
+    :background-image url(/images/add_project_btn.jpg)
+    :background-repeat no-repeat
+    :clear both
+    :display block
+    :float right
+    :margin-top -5px
+    :text-indent -9999px
+    :width 204px
+    :height 31px
+  a.add_project:hover
+    :background-position 0 -31px
+
+#content
+  .main
+    ul.items
+      :margin-right -20px
+    li.item
+      :float left
+      :margin-right 20px
+      :margin-bottom 20px
+      :text-align right
+      :width 140px
+      .item_company
+        :font-size 10px
+      .item_link a
+        :text-decoration none
+        :text-shadow 0px 1px 0px #ffffff
+        :font-size 12px
+        :line-height 18px
+      img
+        :background #ffffff
+        :border 1px solid #C6C2C8
+        :padding 2px
+      img.img_hover
+        :background #3399FF
+        :border 1px solid #3399FF
+  .side_bar
+    ul.banners
+      li
+        :margin-bottom 18px
+
+#footer
+  :font-size 12px
+  :padding-bottom 36px
+
+.grid_4
+  .grid_2
+    :margin-left 0
+
+.hr
+  :background url(/images/hr.gif) repeat-x
+  :clear both
+  :height 2px
+  :margin-bottom 16px
+  :margin-left 10px
+  :margin-right 10px
+  :width auto
+
+.grid_1 .hr, .grid_2 .hr, .grid_3 .hr, .grid_4 .hr, .grid_5 .hr, .grid_6 .hr, .grid_7 .hr, .grid_8 .hr, .grid_9 .hr, .grid_10 .hr, .grid_11 .hr, .grid_12 .hr
+  :margin-left 0
+  :margin-right 0
+
+
 
 #flash_notice,
 #flash_error
