@@ -92,7 +92,8 @@ a {
     background: #3399FF;
     border: 1px solid #3399FF; }
 #content .side_bar ul.banners li {
-  margin-bottom: 18px; }
+  margin-bottom: 18px;
+  text-align: center; }
 
 #footer {
   font-size: 12px;
