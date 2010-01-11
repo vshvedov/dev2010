@@ -28,6 +28,10 @@ h3
   :line-height 18px
   :padding-bottom 18px
 
+p
+  :line-height 18px
+  :margin-bottom 18px
+
 a
   :color #3399FF
   img
@@ -124,7 +128,158 @@ a
   :margin-left 0
   :margin-right 0
 
+fieldset
+  :background #ffffff
+  :clear both
+  :border-color #8F9AA7 #C1CAD5 #C1CAD5
+  :border-style solid
+  :border-width 1px
+  :margin-bottom 36px
+  :-moz-border-radius 5px
+  :-webkit-border-radius 5px
+  .field
+    :background #E6E6E6
+    :border-top 1px solid #ffffff
+    :border-bottom 1px solid #CCC8CE
+    :overflow hidden
+    :padding 8px
+    :position relative
+  .field.header
+    :background none
+    :border-color #CCC8CE
+    :border-style solid
+    :border-width 0 0 1px 0
+    :height 35px
+    :overflow visible
+    span
+      :display block
+      :position absolute
+      :top -15px
+      :left 5px
+      :width 64px
+      :height 64px
+    span.project
+      :background url(/images/form_icons.png) no-repeat
+    span.company
+      :background url(/images/form_icons.png) no-repeat 0 -64px
+    span.human
+      :background url(/images/form_icons.png) no-repeat 0 -128px
+    h3
+      :color #3399FF
+      :font-weight bold
+      :margin-left 70px
+      :padding-bottom 2px
+    h4
+      :font-size 12px
+      :margin-left 70px
+  .field.bottom
+    :background none
+    :height 8px
+  .field.button
+    :background none
+    .create_project_btn
+      :background url(/images/create_project_btn.jpg) no-repeat
+      :border none
+      :cursor pointer
+      :display block
+      :float left
+      :text-indent -9999px
+      :width 160px
+      :height 39px
+    .create_project_btn:hover
+      :background-position 0 -39px
+    .cancel_link
+      :float right
+      :line-height 35px
+      :margin-left 20px
 
+  #recaptcha_image
+    :background #fff
+    :float left
+    :margin 18px 0 0 0
+    :width 370px !important
+    img
+      :margin 0 auto
+  .recaptcha_btns
+    :float left
+    :margin-top 18px
+    :padding-left 18px
+    a.re_reload
+      :background url(/images/recaptcha_btns.jpg) no-repeat
+      :display block
+      :text-indent -9999px
+      :width 32px
+      :height 28px
+    a.re_audio
+      :background url(/images/recaptcha_btns.jpg) no-repeat 0 -28px
+      :display block
+      :text-indent -9999px
+      :width 32px
+      :height 29px
+    a.re_reload:hover
+      :background-position -32px 0
+    a.re_audio:hover
+      :background-position -32px -28px
+
+legend
+  :border-left 1px solid #EEEEEE
+  :border-right 1px solid #EEEEEE
+  :font-weight bold
+  :padding 5px 10px
+
+label
+  :display block
+  :float left
+  :font-size 16px
+  :font-weight bold
+  :line-height 32px
+  :text-align right
+  :text-shadow 0px 1px 0px #ffffff
+  :margin-right 10px
+  :width 160px
+
+input
+  :border-color #B7B7B7 #E8E8E8 #E8E8E8 #B7B7B7
+  :border-style solid
+  :border-width 1px
+  :color #333333
+  :font-size 14px
+  :padding 5px
+  :width 410px
+
+textarea
+  :border-color #B7B7B7 #E8E8E8 #E8E8E8 #B7B7B7
+  :border-style solid
+  :border-width 1px
+  :font-size 14px
+  :padding 5px
+  :width 410px
+
+select
+  :border 1px solid #999999
+  :color #111111
+  :margin 5px 0
+  :padding 5px
+  :min-width 150px
+
+input.submit_button
+  :background #111111 none repeat scroll 0 0
+  :border-color #B7B7B7 #E8E8E8 #E8E8E8 #B7B7B7
+  :border-style solid
+  :border-width 1px
+  :color #FFFFFF
+  :font-size 12px
+  :padding 5px
+  :width 100px
+
+input.checkbox
+  :float left
+  :width auto
+
+.left
+  :float left
+.right
+  :float right
 
 #flash_notice,
 #flash_error

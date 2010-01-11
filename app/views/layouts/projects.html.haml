@@ -1,6 +1,5 @@
 !!! Strict
 %html{html_attrs}
-  
   %head
     %title
       = h(yield(:title) || "Проект dev2010 — все новые проекты рунета в 2010 году")
@@ -9,19 +8,17 @@
     =javascript_include_tag :all
     = auto_discovery_link_tag(:rss, rss_path)
     = yield(:head)
-  
   %body
     #header
       .container_12
-        .grid_3.logo
-          logo
-        .grid_9.top_menu
+        .grid_4.logo= link_to "logo", "#"
+        .grid_8.top_menu
           %ul
             %li=link_to_unless_current "Главная", root_path
             %li=link_to_unless_current "Проекты", projects_path
             %li=link_to "Блог", "http://blog.dev2010.ru"
             %li=link_to "Твиттер", "http://twitter.com/dev2010ru"
-            %li=link_to_unless_current "Добавить свой проект", :controller => "projects", :action => "new"
+            %li=link_to_unless_current "Добавить свой проект", {:controller => "projects", :action => "new"}, :class => "add_project"
     #content
       .container_12
         .grid_8.main
@@ -31,8 +28,8 @@
             %h1=h yield(:title)
           = yield
         .grid_4.side_bar
-          sidemenuuu
+        .hr
     #footer
       .container_12
         .grid_12
-          footer
+          © 2010 DEV2010
