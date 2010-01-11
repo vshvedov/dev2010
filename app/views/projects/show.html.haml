@@ -1,28 +1,19 @@
 - title "Проект " + @project.name
-
-%p
-  = image_tag @project.logo.url(:medium)
-%p
-  %strong Name:
-  =h @project.name
-%p
-  %strong Site Url:
-  =link_to @project.site_url, @project.site_url
-%p
-  %strong Description:
-  =h @project.description
-%p
-  %strong Email:
-  =h @project.email
-%p
-  %strong Company:
-  =h @project.company
-%p
-  %strong Company Url:
-  =link_to @project.company_url, @project.company_url
-%p
-  =link_to "В твиттер!", "http://twitter.com/home/?status="+"Мой+проект+"+@project.name+"+участвует+в+%23dev2010ru+—+http://dev2010.ru/projects/" + @project.id.to_s
-%p
-  =link_to "Facebook", "http://www.facebook.com/sharer.php?u=http://dev2010.ru/projects/"+@project.id.to_s+"&t="+"Мой+проект+"+@project.name+"на DEV2010"
-%p
-  = link_to "Список всех проектов", projects_path
+.project_main_info
+  .grid_4
+    = image_tag @project.logo.url(:medium)
+  .grid_4
+    %h1=h yield(:title)
+    %p
+      =link_to @project.site_url, @project.site_url
+    %p
+      %strong Разработчик:
+      =h @project.company
+      %br
+      =link_to @project.company_url, @project.company_url
+    %p
+      =link_to "В твиттер!", "http://twitter.com/home/?status="+"Мой+проект+"+@project.name+"+участвует+в+%23dev2010ru+—+http://dev2010.ru/projects/" + @project.id.to_s
+    %p
+      =link_to "Facebook", "http://www.facebook.com/sharer.php?u=http://dev2010.ru/projects/"+@project.id.to_s+"&t="+"Мой+проект+"+@project.name+"на DEV2010"
+.grid_8
+  %p=h @project.description

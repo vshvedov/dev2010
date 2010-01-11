@@ -92,28 +92,33 @@ a {
 #top_content h2.whoishere {
   background-position: 0 -60px; }
 
-#content .main ul.items {
-  margin-right: -20px; }
-#content .main li.item {
-  float: left;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  text-align: right;
-  width: 140px; }
-  #content .main li.item .item_company {
-    font-size: 10px; }
-  #content .main li.item .item_link a {
-    text-decoration: none;
-    text-shadow: 0px 1px 0px #ffffff;
-    font-size: 12px;
-    line-height: 18px; }
-  #content .main li.item img {
-    background: #ffffff;
-    border: 1px solid #C6C2C8;
-    padding: 2px; }
-  #content .main li.item img.img_hover {
-    background: #3399FF;
-    border: 1px solid #3399FF; }
+#content .main {
+  margin: 0 -10px; }
+  #content .main ul.items {
+    margin-right: -20px; }
+  #content .main li.item {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    text-align: right;
+    width: 140px; }
+    #content .main li.item .item_company {
+      font-size: 10px; }
+    #content .main li.item .item_link a {
+      text-decoration: none;
+      text-shadow: 0px 1px 0px #ffffff;
+      font-size: 12px;
+      line-height: 18px; }
+    #content .main li.item img {
+      background: #ffffff;
+      border: 1px solid #C6C2C8;
+      padding: 2px; }
+    #content .main li.item img.img_hover {
+      background: #3399FF;
+      border: 1px solid #3399FF; }
+#content .project_main_info {
+  margin-bottom: 36px;
+  overflow: hidden; }
 #content .side_bar ul.banners li {
   margin-bottom: 18px;
   text-align: center; }
@@ -124,6 +129,9 @@ a {
 
 .grid_4 .grid_2 {
   margin-left: 0; }
+
+.grid_8 .grid_4 {
+  margin-right: 0; }
 
 .hr {
   background: url(/images/hr.gif) repeat-x;

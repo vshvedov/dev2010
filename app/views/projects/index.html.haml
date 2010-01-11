@@ -1,23 +1,9 @@
-- title "Projects"
-
-%table
-  %tr
-    %th Name
-    %th Site url
-    %th Description
-    %th Logo
-    %th Company
-    %th Company url
-  - for project in @projects
-    %tr
-      %td= h project.name
-      %td= h project.site_url
-      %td= h project.description
-      %td= image_tag project.logo.url(:thumb)
-      %td= h project.company
-      %td= h project.company_url
-      %td= link_to 'Show', project
-      %td= link_to 'Edit', edit_project_path(project)
-      %td= link_to 'Destroy', project, :confirm => 'Are you sure?', :method => :delete
-=will_paginate @projects, :prev_label => "← Туда", :next_label => "Сюда →"
-%p= link_to "New Project", new_project_path
+- title "Проекты"
+.grid_8
+  %h1=h yield(:title)
+  %ul.items
+    -for project in @projects
+      %li.item
+        = link_to image_tag(project.logo.url(:thumb)), project, :class => "item_image"
+        .item_link=link_to "#{h project.name}", project
+  =will_paginate @projects, :prev_label => "← Туда", :next_label => "Сюда →"
