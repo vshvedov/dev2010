@@ -6,4 +6,13 @@ $(function(){
     $(this).find("img").removeClass("img_hover");
     $(this).find(".product_title").removeClass("a_hover");
   });
+
+  $(".field input, .field textarea").focus(function(){
+    $(this).next().appear();
+  });
+
+  $(".field input, .field textarea").bind("blur", function() {
+    $(this).next().hide();
+  });
+
 })

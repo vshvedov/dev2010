@@ -8,16 +8,32 @@
     .field
       = f.label :name
       = f.text_field :name
+      .field_text
+        %h4
+          Имя проекта
+        %p Duis blandit, lacus accumsan dictum placerat, orci risus tempor arcu, vel bibendum quam ante id dui. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed odio velit, feugiat nec laoreet laoreet, consectetur mattis sem. Vestibulum consequat pulvinar enim ut iaculis. Aenean dolor dui, sollicitudin eget bibendum sit amet, hendrerit malesuada augue.
     .field
       = f.label :site_url
       = f.text_field :site_url
+      .field_text
+        %h4
+          Сcылка на проект
+        %p Duis blandit, lacus accumsan dictum placerat, orci risus tempor arcu, vel bibendum quam ante id dui. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed odio velit, feugiat nec laoreet laoreet, consectetur mattis sem. Vestibulum consequat pulvinar enim ut iaculis. Aenean dolor dui, sollicitudin eget bibendum sit amet, hendrerit malesuada augue.
     .field
       = f.label :description
       -# = textile_editor :description, f
       = f.text_area :description
+      .field_text
+        %h4
+          Описание проекта
+        %p Duis blandit, lacus accumsan dictum placerat, orci risus tempor arcu, vel bibendum quam ante id dui. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed odio velit, feugiat nec laoreet laoreet, consectetur mattis sem. Vestibulum consequat pulvinar enim ut iaculis. Aenean dolor dui, sollicitudin eget bibendum sit amet, hendrerit malesuada augue.
     .field
       = f.label :logo
       = f.file_field :logo
+      .field_text
+        %h4
+          Логотип проекта
+        %p Duis blandit, lacus accumsan dictum placerat, orci risus tempor arcu, vel bibendum quam ante id dui. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed odio velit, feugiat nec laoreet laoreet, consectetur mattis sem. Vestibulum consequat pulvinar enim ut iaculis. Aenean dolor dui, sollicitudin eget bibendum sit amet, hendrerit malesuada augue.
     .field.bottom
 
   %fieldset
@@ -28,12 +44,24 @@
     .field
       = f.label :company
       = f.text_field :company
+      .field_text
+        %h4
+          Имя компании
+        %p Duis blandit, lacus accumsan dictum placerat, orci risus tempor arcu, vel bibendum quam ante id dui. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed odio velit, feugiat nec laoreet laoreet, consectetur mattis sem. Vestibulum consequat pulvinar enim ut iaculis. Aenean dolor dui, sollicitudin eget bibendum sit amet, hendrerit malesuada augue.
     .field
       = f.label :company_url
       = f.text_field :company_url
+      .field_text
+        %h4
+          Сайт компании
+        %p Duis blandit, lacus accumsan dictum placerat, orci risus tempor arcu, vel bibendum quam ante id dui. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed odio velit, feugiat nec laoreet laoreet, consectetur mattis sem. Vestibulum consequat pulvinar enim ut iaculis. Aenean dolor dui, sollicitudin eget bibendum sit amet, hendrerit malesuada augue.
     .field
       = f.label :email
       = f.text_field :email
+      .field_text
+        %h4
+          Электропочта компании
+        %p Duis blandit, lacus accumsan dictum placerat, orci risus tempor arcu, vel bibendum quam ante id dui. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed odio velit, feugiat nec laoreet laoreet, consectetur mattis sem. Vestibulum consequat pulvinar enim ut iaculis. Aenean dolor dui, sollicitudin eget bibendum sit amet, hendrerit malesuada augue.
     .field.bottom
 
   %fieldset
@@ -52,6 +80,7 @@
             <a class="re_reload" href="javascript:Recaptcha.switch_type('image');">Reload</a>
             <a class="re_audio" href="javascript:Recaptcha.switch_type('audio');">Audio</a>
           </div>
+        <div class="clear"></div>
         </div>
       </div>
 
@@ -69,4 +98,5 @@
     .field.button
       = f.submit "Добавить", :class => "create_project_btn"
       = link_to "Отмена", projects_path, :class => "cancel_link"
+      .clear
   = textile_editor_initialize
