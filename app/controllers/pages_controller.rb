@@ -1,8 +1,8 @@
 class PagesController < ApplicationController
   def index
-    @projects = Project.find(:all, :limit => 10, :order => 'created_at DESC')
+    @projects = Project.find(:all, :limit => 12, :order => 'created_at DESC')
     @allprojects = Project.find(:all)
-    @rndprojects = Project.find(:all, :limit => 10, :order => 'RAND()')
+    @rndprojects = Project.find(:all, :limit => 12, :order => 'RAND()')
   end
 
   def rss
