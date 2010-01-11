@@ -33,11 +33,9 @@
           %h2.whoishere Кто тут
           %p
             До конца года осталось 
-            = (365 - Time.now.to_datetime.day).to_s + "."
-          %p
-            Учавствуют
+            = (365 - Time.now.to_datetime.day).to_s + " дней."
+            Проектов на сайте: 
             = @allprojects.size.to_s
-            проектов
         .hr
     #content
       .container_12
@@ -49,7 +47,7 @@
           = yield
         .grid_4.side_bar
           %ul.banners
-            %li= image_tag "/images/banner_240_1.gif"
+            %li= image_tag "/images/banner.jpg"
         .hr
     #footer
       .container_12
