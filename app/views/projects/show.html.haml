@@ -32,6 +32,8 @@
       %br
       =link_to @project.company_url, @project.company_url
     %p
+      Вы можете написать о проекте:
+    %p
       =link_to "В твиттер!", "http://twitter.com/home/?status="+"Мой+проект+"+@project.name+"+участвует+в+%23dev2010ru+—+http://dev2010.ru/projects/" + @project.id.to_s, :class => "social_btn twitter"
       =link_to "Facebook", "http://www.facebook.com/sharer.php?u=http://dev2010.ru/projects/"+@project.id.to_s+"&t="+"Мой+проект+"+@project.name+"на DEV2010", :class => "social_btn facebook"
 .grid_8
