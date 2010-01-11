@@ -24,10 +24,11 @@
   .grid_4
     %h1=h yield(:title)
     %p
+      %strong Сайт проекта:
       =link_to @project.site_url, @project.site_url
     %p
       %strong Разработчик:
-      =h @project.company
+      ="«"+ (h @project.company) + "»"
       %br
       =link_to @project.company_url, @project.company_url
     %p
