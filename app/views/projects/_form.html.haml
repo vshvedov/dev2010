@@ -3,32 +3,32 @@
   %fieldset
     .field.header
       %span.project
-      %h3 Новый проект
-      %h4 Твой проект увидит вся страна!
+      %h3 Основные данные
+      %h4 Самое важное о вашем проекте. 
     .field
-      = f.label :name
+      = f.label :name, "Название:"
       = f.text_field :name
       .field_text
         %h4
-          Имя проекта
-        %p Duis blandit, lacus accumsan dictum placerat, orci risus tempor arcu, vel bibendum quam ante id dui. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed odio velit, feugiat nec laoreet laoreet, consectetur mattis sem. Vestibulum consequat pulvinar enim ut iaculis. Aenean dolor dui, sollicitudin eget bibendum sit amet, hendrerit malesuada augue.
+          Название проекта
+        %p Обязательное поле. Название на русском, или любом другом языке. В URL русское название будет транслитерировано.
     .field
-      = f.label :site_url
+      = f.label :site_url, "Сайт проекта:"
       = f.text_field :site_url
       .field_text
         %h4
           Сcылка на проект
-        %p Duis blandit, lacus accumsan dictum placerat, orci risus tempor arcu, vel bibendum quam ante id dui. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed odio velit, feugiat nec laoreet laoreet, consectetur mattis sem. Vestibulum consequat pulvinar enim ut iaculis. Aenean dolor dui, sollicitudin eget bibendum sit amet, hendrerit malesuada augue.
+        %p Это тоже, обязательно поле. Прямая ссылка на ваш сайт с «http://». Например: http://google.com
     .field
-      = f.label :description
+      = f.label :description, "Описание:"
       -# = textile_editor :description, f
       = f.text_area :description
       .field_text
         %h4
           Описание проекта
-        %p Duis blandit, lacus accumsan dictum placerat, orci risus tempor arcu, vel bibendum quam ante id dui. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed odio velit, feugiat nec laoreet laoreet, consectetur mattis sem. Vestibulum consequat pulvinar enim ut iaculis. Aenean dolor dui, sollicitudin eget bibendum sit amet, hendrerit malesuada augue.
+        %p Очень важное поле, оно обязательно к заполнению. Вы должны сами определить, насколько подробным будет описание. Если основной смысл вашего проекта — коммерческая тайна или проект содержит какие-то инновации (например, «Социальная сеть для октопусов с семью тентаклями»), попробуйте, хотя бы, описать сферу, где он будет применим (например «Сервис для октопусов с психологическими проблемами»). Здесь вы можете оставить ссылки, например на Твиттер, контактные данные, которые будут публично доступны.
     .field
-      = f.label :logo
+      = f.label :logo, "Логотип:"
       = f.file_field :logo
       .field_text
         %h4
@@ -40,40 +40,40 @@
     .field.header
       %span.company
       %h3 Компания
-      %h4 Твой проект увидит вся страна!
+      %h4 Информация о разработчике или компании.
     .field
-      = f.label :company
+      = f.label :company, "Название:"
       = f.text_field :company
       .field_text
         %h4
-          Имя компании
-        %p Duis blandit, lacus accumsan dictum placerat, orci risus tempor arcu, vel bibendum quam ante id dui. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed odio velit, feugiat nec laoreet laoreet, consectetur mattis sem. Vestibulum consequat pulvinar enim ut iaculis. Aenean dolor dui, sollicitudin eget bibendum sit amet, hendrerit malesuada augue.
+          Название компании
+        %p Обязательное поле. Название вашей компании или, если вы единственный разработчик, блогер, дизйнер — ваше имя. Выбор за вами.
     .field
-      = f.label :company_url
+      = f.label :company_url, "Сайт:"
       = f.text_field :company_url
       .field_text
         %h4
           Сайт компании
-        %p Duis blandit, lacus accumsan dictum placerat, orci risus tempor arcu, vel bibendum quam ante id dui. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed odio velit, feugiat nec laoreet laoreet, consectetur mattis sem. Vestibulum consequat pulvinar enim ut iaculis. Aenean dolor dui, sollicitudin eget bibendum sit amet, hendrerit malesuada augue.
+        %p Скорее всего, вы поняли, что это поле также обязательно к заполнению. Если у вашей компании нет сайта — оставте ссылку на блог, ЖЖ, Твиттер. Перед ссылкой нужно добавлять «http://».
     .field
-      = f.label :email
+      = f.label :email, "Почта:"
       = f.text_field :email
       .field_text
         %h4
           Электропочта компании
-        %p Duis blandit, lacus accumsan dictum placerat, orci risus tempor arcu, vel bibendum quam ante id dui. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed odio velit, feugiat nec laoreet laoreet, consectetur mattis sem. Vestibulum consequat pulvinar enim ut iaculis. Aenean dolor dui, sollicitudin eget bibendum sit amet, hendrerit malesuada augue.
+        %p Вы будете удивлены. Это поле, также обязательно к заполнению, хотя на сайте ваш емэйл отображаться не будет. Он — для нас. Вполне возможно, что кто-то заинтересуется вашим проектом, возможно, мы возмем у вас короткое интервью. В любом случае, почта гораздо понятнее, чем Гугл Вэйв. Емэйл будет использован только для связи с вами.
     .field.bottom
 
   %fieldset
     .field.header
       %span.human
-      %h3 А ты человек?
-      %h4 Твой проект увидит вся страна!
+      %h3 А вы человек?
+      %h4 Мы ничего не имеем против роботов, но, этот проект для людей. Извините.
     =recaptcha_tags :display=>{:theme=>'custom'}
     :erb
       <div id="recaptcha_container">
         <div class="field">
-          <label for="recaptcha_response_field">Введи то что на картинке</label>
+          <label for="recaptcha_response_field">Что написано на капче?</label>
           <input type="text" id="recaptcha_response_field" name="recaptcha_response_field" class="text" />
           <div id="recaptcha_image"></div>
           <div class="recaptcha_btns">
