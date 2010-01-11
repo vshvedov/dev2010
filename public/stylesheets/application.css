@@ -93,12 +93,12 @@ a {
   background-position: 0 -60px; }
 
 #content .main {
-  margin: 0 -10px; }
+  min-height: 600px; }
   #content .main ul.items {
     margin-right: -20px; }
   #content .main li.item {
     float: left;
-    margin-right: 20px;
+    margin-right: 18px;
     margin-bottom: 20px;
     text-align: right;
     width: 140px; }
