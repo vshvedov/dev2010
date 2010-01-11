@@ -11,10 +11,9 @@
   %body
     #header
       .container_12
-        .grid_4.logo= link_to "logo", "#"
+        .grid_4.logo= link_to "logo", root_path
         .grid_8.top_menu
           %ul
-            %li=link_to_unless_current "Главная", root_path
             %li=link_to_unless_current "Проекты", projects_path
             %li=link_to "Блог", "http://blog.dev2010.ru"
             %li=link_to "Твиттер", "http://twitter.com/dev2010ru"
