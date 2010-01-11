@@ -125,6 +125,23 @@ a
   .project_main_info
     :margin-bottom 36px
     :overflow hidden
+    .social_btn
+      :background url(/images/social_buttons.gif) no-repeat
+      :display block
+      :text-indent -9999px
+      :float left
+      :margin-right 10px
+      :width 110px
+      :height 31px
+    .social_btn.twitter
+      :background-position 0 0
+    .social_btn.facebook
+      :background-position -110px 0
+    .social_btn.twitter:hover
+      :background-position 0 -31px
+    .social_btn.facebook:hover
+      :background-position -110px -31px
+
   .side_bar
     ul.banners
       li
