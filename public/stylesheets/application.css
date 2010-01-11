@@ -79,7 +79,18 @@ a {
     background-position: 0 -31px; }
 
 #top_content h2 {
-  padding-bottom: 0; }
+  background: url(/images/main_icons.gif) no-repeat;
+  color: #CE3A4A;
+  padding-bottom: 0px;
+  padding-left: 35px;
+  margi-bottom: 6px;
+  line-height: 30px; }
+#top_content h2.wtf {
+  background-position: 0 0; }
+#top_content h2.forwho {
+  background-position: 0 -30px; }
+#top_content h2.whoishere {
+  background-position: 0 -60px; }
 
 #content .main ul.items {
   margin-right: -20px; }
