@@ -78,6 +78,9 @@ a {
   #header a.add_project:hover {
     background-position: 0 -31px; }
 
+#top_content h2 {
+  padding-bottom: 0; }
+
 #content .main ul.items {
   margin-right: -20px; }
 #content .main li.item {
