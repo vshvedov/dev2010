@@ -8,11 +8,11 @@ $(function(){
   });
 
   $(".field input, .field textarea").focus(function(){
-    $(this).next().appear();
+    $(this).parent().find(".field_text").appear();
   });
 
   $(".field input, .field textarea").bind("blur", function() {
-    $(this).next().hide();
+    $(this).parent().find(".field_text").hide();
   });
 
 })
