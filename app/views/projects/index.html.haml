@@ -3,7 +3,5 @@
   %h1=h yield(:title)
   %ul.items
     -for project in @projects
-      %li.item
-        = link_to image_tag(project.logo.url(:thumb)), project, :class => "item_image"
-        .item_link=link_to "#{h project.name}", project
+      = render :partial => "projects/normal_item", :locals => { :project => project }
   =will_paginate @projects, :prev_label => "← Туда", :next_label => "Сюда →"
