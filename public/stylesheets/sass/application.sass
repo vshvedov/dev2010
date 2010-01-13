@@ -1,5 +1,5 @@
-!bg_color = #E5E3E6
-!text_color = #5D6066
+!bg_color = #DCDFE4
+!text_color = #666666
 
 body
   :background-color = !bg_color
@@ -53,7 +53,8 @@ a
   :overflow hidden
 
 #header
-  :padding-top 36px
+  :background #194C87 url(/images/header_bg.jpg) repeat-x
+  :height 129px
   .top_menu ul
     :float right
     :margin-bottom 18px
@@ -61,24 +62,38 @@ a
     :float left
     :font-size 16px
   .top_menu li a
+    :background-image url(/images/top_menu.jpg) no-repeat
     :font-size 16px
     :padding 0 9px
+    a.all_projects
+      :background-position 0 0
+    a.all_projects:hover
+      :background-position 0 -59px
+    a.blog
+      :background-position 130px 0
+    a.blog:hover
+      :background-position 130 -59px
+    a.twitter
+      :background-position 200px 0
+    a.twitter:hover
+      :background-position 200px -59px
+    a.add_project
+      :background-image url(/images/add_project_btn.jpg)
+      :background-repeat no-repeat
+      :clear both
+      :display block
+      :float right
+      :margin-top -5px
+      :text-indent -9999px
+      :width 204px
+      :height 31px
   .logo a
     :background url(/images/dev2010_logo.gif) no-repeat
     :display block
-    :height 57px
+    :margin-top 1px
+    :height 125px
     :text-indent -9999px
-    :width 227px
-  a.add_project
-    :background-image url(/images/add_project_btn.jpg)
-    :background-repeat no-repeat
-    :clear both
-    :display block
-    :float right
-    :margin-top -5px
-    :text-indent -9999px
-    :width 204px
-    :height 31px
+    :width 273px
   a.add_project:hover
     :background-position 0 -31px
 
