@@ -1,6 +1,6 @@
 class ProjectsController < ApplicationController
   def index
-    @projects = Project.paginate :page => 1, :order => 'created_at DESC'
+    @projects = Project.paginate :page => params[:page], :order => 'created_at DESC'
   end
   
   def show
