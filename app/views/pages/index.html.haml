@@ -1,9 +1,14 @@
-%h2 Новые проекты
-%ul.items
-  -for project in @projects
-    = render :partial => "projects/normal_item", :locals => { :project => project }
-.hr
-%h2 Случайные проекты
-%ul.items
-  -for project in @rndprojects
-    = render :partial => "projects/normal_item", :locals => { :project => project }
+.box
+  .box_top
+  %h2.new_projects Новые проекты
+  %ul.items
+    -for project in @projects
+      = render :partial => "projects/normal_item", :locals => { :project => project }
+  .box_bottom
+.box
+  .box_top
+  %h2.rnd_projects Случайные проекты
+  %ul.items
+    -for project in @rndprojects
+      = render :partial => "projects/normal_item", :locals => { :project => project }
+  .box_bottom

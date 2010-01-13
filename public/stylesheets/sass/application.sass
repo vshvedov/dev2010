@@ -140,14 +140,39 @@ a
 #content
   .main
     :min-height 600px
+    :width 640px
+    .box
+      :background url(/images/box_bg_1.gif) repeat-y
+      :margin-bottom 36px
+      .box_top
+        :background url(/images/box_bg.gif) no-repeat
+        :height 8px
+      .box_bottom
+        :background url(/images/box_bg.gif) no-repeat bottom
+        :clear both
+        :height 8px
+      h2
+        :background url(/images/h2_ribbons.gif) no-repeat
+        :margin 7px 0 15px -9px
+        :padding 0
+        :text-indent -9999px
+        :height 47px
+      h2.new_projects
+        :background-position 0 0
+        :width 212px
+      h2.rnd_projects
+        :background-position 0 -47px
+        :width 254px
     ul.items
       :margin-right -20px
+      :padding 0 10px
     li.item
       :float left
       :margin-right 18px
       :margin-bottom 20px
       :text-align right
       :width 140px
+      :height 130px
       a.item_image
         :background #ffffff
         :display table-cell
@@ -161,11 +186,14 @@ a
         :border 1px solid #3399FF
       .item_company
         :font-size 10px
-      .item_link a
-        :text-decoration none
-        :text-shadow 0px 1px 0px #ffffff
-        :font-size 12px
-        :line-height 18px
+      .item_link
+        :overflow hidden
+        :height 25px
+        a
+          :text-decoration none
+          :text-shadow 0px 1px 0px #ffffff
+          :font-size 12px
+          :line-height 18px
   .project_main_info
     :margin-bottom 36px
     :overflow hidden
@@ -187,6 +215,7 @@ a
       :background-position -110px -31px
 
   .side_bar
+    :width 280px
     ul.banners
       li
         :margin-bottom 18px

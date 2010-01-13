@@ -132,15 +132,40 @@ a {
     text-shadow: 0px -1px 0px #629314; }
 
 #content .main {
-  min-height: 600px; }
+  min-height: 600px;
+  width: 640px; }
+  #content .main .box {
+    background: url(/images/box_bg_1.gif) repeat-y;
+    margin-bottom: 36px; }
+    #content .main .box .box_top {
+      background: url(/images/box_bg.gif) no-repeat;
+      height: 8px; }
+    #content .main .box .box_bottom {
+      background: url(/images/box_bg.gif) no-repeat bottom;
+      clear: both;
+      height: 8px; }
+    #content .main .box h2 {
+      background: url(/images/h2_ribbons.gif) no-repeat;
+      margin: 7px 0 15px -9px;
+      padding: 0;
+      text-indent: -9999px;
+      height: 47px; }
+    #content .main .box h2.new_projects {
+      background-position: 0 0;
+      width: 212px; }
+    #content .main .box h2.rnd_projects {
+      background-position: 0 -47px;
+      width: 254px; }
   #content .main ul.items {
-    margin-right: -20px; }
+    margin-right: -20px;
+    padding: 0 10px; }
   #content .main li.item {
     float: left;
     margin-right: 18px;
     margin-bottom: 20px;
     text-align: right;
-    width: 140px; }
+    width: 140px;
+    height: 130px; }
     #content .main li.item a.item_image {
       background: #ffffff;
       display: table-cell;
@@ -154,11 +179,14 @@ a {
       border: 1px solid #3399FF; }
     #content .main li.item .item_company {
       font-size: 10px; }
-    #content .main li.item .item_link a {
-      text-decoration: none;
-      text-shadow: 0px 1px 0px #ffffff;
-      font-size: 12px;
-      line-height: 18px; }
+    #content .main li.item .item_link {
+      overflow: hidden;
+      height: 25px; }
+      #content .main li.item .item_link a {
+        text-decoration: none;
+        text-shadow: 0px 1px 0px #ffffff;
+        font-size: 12px;
+        line-height: 18px; }
 #content .project_main_info {
   margin-bottom: 36px;
   overflow: hidden; }
@@ -178,9 +206,11 @@ a {
     background-position: 0 -31px; }
   #content .project_main_info .social_btn.facebook:hover {
     background-position: -110px -31px; }
-#content .side_bar ul.banners li {
-  margin-bottom: 18px;
-  text-align: center; }
+#content .side_bar {
+  width: 280px; }
+  #content .side_bar ul.banners li {
+    margin-bottom: 18px;
+    text-align: center; }
 
 #footer {
   font-size: 12px;
