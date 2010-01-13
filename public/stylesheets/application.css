@@ -68,6 +68,17 @@ a {
       width: 130px; }
     #header .top_menu li a.all_projects:hover {
       background-position: 0 -59px; }
+    #header .top_menu li span {
+      background: url(/images/top_menu.jpg) no-repeat;
+      display: block;
+      text-indent: -9999px;
+      height: 59px; }
+    #header .top_menu li span.all_projects {
+      background-position: 0 -118px;
+      width: 130px; }
+    #header .top_menu li span.add_project {
+      background-position: -302px -118px;
+      width: 225px; }
     #header .top_menu li a.blog {
       background-position: -130px 0;
       width: 70px; }
