@@ -19,3 +19,6 @@
       =link_to "Facebook", "http://www.facebook.com/sharer.php?u=http://dev2010.ru/projects/"+@project.id.to_s+"&t="+"Мой+проект+"+@project.name+"на DEV2010", :class => "social_btn facebook"
 .grid_8
   %p=h @project.description
+
+- content_for :side_bar do
+  = render :partial => "layouts/banners"

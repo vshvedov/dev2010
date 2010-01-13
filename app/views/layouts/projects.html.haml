@@ -24,6 +24,8 @@
           - flash.each do |name, msg|
             = content_tag :div, msg, :id => "flash_#{name}"
           = yield
+        .grid_4.side_bar
+          = yield :side_bar
         .hr
     #footer
       .container_12

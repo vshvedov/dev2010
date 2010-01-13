@@ -7,3 +7,6 @@
       = render :partial => "projects/normal_item", :locals => { :project => project }
   .box_bottom
   =will_paginate @projects, :prev_label => "← Туда", :next_label => "Сюда →"
+
+- content_for :side_bar do
+  = render :partial => "layouts/banners"

@@ -42,8 +42,7 @@
             %h1=h yield(:title)
           = yield
         .grid_4.side_bar
-          %ul.banners
-            %li= image_tag "/images/banner.jpg"
+          = yield :side_bar
         .hr
     #footer
       .container_12

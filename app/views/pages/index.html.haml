@@ -12,3 +12,6 @@
     -for project in @rndprojects
       = render :partial => "projects/normal_item", :locals => { :project => project }
   .box_bottom
+
+- content_for :side_bar do
+  = render :partial => "layouts/banners"
