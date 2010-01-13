@@ -14,10 +14,10 @@
         .grid_4.logo= link_to "logo", root_path
         .grid_8.top_menu
           %ul
-            %li=link_to_unless_current "Проекты", projects_path, :class => "all_projects"
-            %li=link_to "Блог", "http://blog.dev2010.ru", :class => "blog"
-            %li=link_to "Твиттер", "http://twitter.com/dev2010ru", :class => "twitter"
-            %li=link_to_unless_current "Добавить свой проект", {:controller => "projects", :action => "new"}, :class => "add_project"
+            %li= link_to_unless_current "Проекты", projects_path, :class => "all_projects"
+            %li= link_to "Блог", "http://blog.dev2010.ru", :class => "blog"
+            %li= link_to "Твиттер", "http://twitter.com/dev2010ru", :class => "twitter"
+            %li= link_to_unless_current "Добавить свой проект", {:controller => "projects", :action => "new"}, :class => "add_project"
     #top_content
       .container_12
         .grid_4

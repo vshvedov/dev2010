@@ -1,13 +1,9 @@
 %h2 Новые проекты
 %ul.items
   -for project in @projects
-    %li.item
-      = link_to image_tag(project.logo.url(:thumb)), project, :class => "item_image"
-      .item_link=link_to "#{h project.name}", project
+    = render :partial => "projects/normal_item", :locals => { :project => project }
 .hr
 %h2 Случайные проекты
 %ul.items
   -for project in @rndprojects
-    %li.item
-      = link_to image_tag(project.logo.url(:thumb)), project, :class => "item_image"
-      .item_link=link_to "#{h project.name}", project
+    = render :partial => "projects/normal_item", :locals => { :project => project }

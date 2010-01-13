@@ -68,6 +68,17 @@ a {
       width: 130px; }
     #header .top_menu li a.all_projects:hover {
       background-position: 0 -59px; }
+    #header .top_menu li span {
+      background: url(/images/top_menu.jpg) no-repeat;
+      display: block;
+      text-indent: -9999px;
+      height: 59px; }
+    #header .top_menu li span.all_projects {
+      background-position: 0 -118px;
+      width: 130px; }
+    #header .top_menu li span.add_project {
+      background-position: -302px -118px;
+      width: 225px; }
     #header .top_menu li a.blog {
       background-position: -130px 0;
       width: 70px; }
@@ -118,6 +129,17 @@ a {
     margin-bottom: 20px;
     text-align: right;
     width: 140px; }
+    #content .main li.item a.item_image {
+      background: #ffffff;
+      display: table-cell;
+      vertical-align: middle;
+      border: 1px solid #C6C2C8;
+      padding: 2px;
+      width: 140px;
+      height: 107px; }
+    #content .main li.item a.item_image.img_hover {
+      background: #3399FF;
+      border: 1px solid #3399FF; }
     #content .main li.item .item_company {
       font-size: 10px; }
     #content .main li.item .item_link a {
@@ -125,13 +147,6 @@ a {
       text-shadow: 0px 1px 0px #ffffff;
       font-size: 12px;
       line-height: 18px; }
-    #content .main li.item img {
-      background: #ffffff;
-      border: 1px solid #C6C2C8;
-      padding: 2px; }
-    #content .main li.item img.img_hover {
-      background: #3399FF;
-      border: 1px solid #3399FF; }
 #content .project_main_info {
   margin-bottom: 36px;
   overflow: hidden; }
