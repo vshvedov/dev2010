@@ -34,7 +34,7 @@ p {
   margin-bottom: 18px; }
 
 a {
-  color: #3399FF; }
+  color: #2970c0; }
   a img {
     border: none; }
 
@@ -105,19 +105,31 @@ a {
   #header a.add_project:hover {
     background-position: 0 -31px; }
 
-#top_content h2 {
-  background: url(/images/main_icons.gif) no-repeat;
-  color: #CE3A4A;
-  padding-bottom: 0px;
-  padding-left: 35px;
-  margi-bottom: 6px;
-  line-height: 30px; }
-#top_content h2.wtf {
-  background-position: 0 0; }
-#top_content h2.forwho {
-  background-position: 0 -30px; }
-#top_content h2.whoishere {
-  background-position: 0 -60px; }
+#top_content {
+  overflow: hidden;
+  margin-bottom: 36px; }
+  #top_content .grid_12 {
+    background: url(/images/top_content_bg.jpg) no-repeat;
+    height: 188px; }
+  #top_content h2 {
+    background: url(/images/main_icons.gif) no-repeat;
+    color: #444751;
+    padding-bottom: 0px;
+    padding-left: 35px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    line-height: 30px; }
+  #top_content h2.wtf {
+    background-position: 0 0; }
+  #top_content h2.forwho {
+    background-position: 0 -30px; }
+  #top_content h3.whoishere {
+    color: #ffffff;
+    font-size: 100px;
+    line-height: 120px;
+    text-align: center;
+    margin-right: 20px;
+    text-shadow: 0px -1px 0px #629314; }
 
 #content .main {
   min-height: 600px; }
@@ -178,6 +190,9 @@ a {
   margin-left: 0; }
 
 .grid_8 .grid_4 {
+  margin-right: 0; }
+
+.grid_12 .grid_4 {
   margin-right: 0; }
 
 .hr {

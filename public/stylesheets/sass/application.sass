@@ -1,5 +1,6 @@
 !bg_color = #DCDFE4
 !text_color = #666666
+!link_color = #2970c0
 
 body
   :background-color = !bg_color
@@ -38,7 +39,7 @@ p
   :margin-bottom 18px
 
 a
-  :color #3399FF
+  :color = !link_color
   img
     :border none
 
@@ -111,19 +112,30 @@ a
     :background-position 0 -31px
 
 #top_content
+  :overflow hidden
+  :margin-bottom 36px
+  .grid_12
+    :background url(/images/top_content_bg.jpg) no-repeat
+    :height 188px
   h2
     :background url(/images/main_icons.gif) no-repeat
-    :color #CE3A4A
+    :color #444751
     :padding-bottom 0px
     :padding-left 35px
-    :margi-bottom 6px
+    :margin-bottom 10px
+    :margin-top 20px
     :line-height 30px
   h2.wtf
     :background-position 0 0
   h2.forwho
     :background-position 0 -30px
-  h2.whoishere
-    :background-position 0 -60px
+  h3.whoishere
+    :color #ffffff
+    :font-size 100px
+    :line-height 120px
+    :text-align center
+    :margin-right 20px
+    :text-shadow 0px -1px 0px #629314
 
 #content
   .main
@@ -190,6 +202,10 @@ a
 .grid_8
   .grid_4
     :margin-right 0
+.grid_12
+  .grid_4
+    :margin-right 0
+
 .hr
   :background url(/images/hr.gif) repeat-x
   :clear both
