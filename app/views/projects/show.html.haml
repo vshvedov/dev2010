@@ -20,5 +20,7 @@
 .grid_8
   %p=h @project.description
 
+- content_for :top_content do
+  = render :partial => "layouts/top_small", :locals => { :project => @allprojects }
 - content_for :side_bar do
   = render :partial => "layouts/banners"

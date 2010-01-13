@@ -8,5 +8,7 @@
   .box_bottom
   =will_paginate @projects, :prev_label => "← Туда", :next_label => "Сюда →"
 
+- content_for :top_content do
+  = render :partial => "layouts/top_small", :locals => { :project => @projects }
 - content_for :side_bar do
   = render :partial => "layouts/banners"
