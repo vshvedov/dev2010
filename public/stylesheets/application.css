@@ -156,6 +156,9 @@ a {
     #content .main .box h2.rnd_projects {
       background-position: 0 -47px;
       width: 254px; }
+    #content .main .box h2.all_projects {
+      background-position: 0 -94px;
+      width: 254px; }
   #content .main ul.items {
     margin-right: -20px;
     padding: 0 10px; }
@@ -181,7 +184,7 @@ a {
       font-size: 10px; }
     #content .main li.item .item_link {
       overflow: hidden;
-      height: 25px; }
+      height: 22px; }
       #content .main li.item .item_link a {
         text-decoration: none;
         text-shadow: 0px 1px 0px #ffffff;
@@ -213,13 +216,17 @@ a {
     text-align: center; }
 
 .pagination {
-  margin-bottom: 18px; }
+  background: url(/images/pagination_bg.jpg) no-repeat;
+  clear: both;
+  margin-top: -10px;
+  margin-bottom: 18px;
+  padding: 10px 10px 0 10px;
+  height: 40px; }
   .pagination span {
     float: left;
     margin: 2px;
     padding: 3px 6px 2px; }
   .pagination a {
-    border: 1px solid #DDDDDD;
     display: block;
     float: left;
     margin: 2px;

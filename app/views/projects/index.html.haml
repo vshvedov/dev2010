@@ -1,8 +1,9 @@
 - title "Проекты"
-.grid_8
-  %h1=h yield(:title)
+.box
+  .box_top
+  %h2.all_projects=h yield(:title)
   %ul.items
     -for project in @projects
       = render :partial => "projects/normal_item", :locals => { :project => project }
-.grid_8
+  .box_bottom
   =will_paginate @projects, :prev_label => "← Туда", :next_label => "Сюда →"
