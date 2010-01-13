@@ -57,36 +57,38 @@ a
   :height 129px
   .top_menu ul
     :float right
-    :margin-bottom 18px
+    :margin-top 37px
   .top_menu li
     :float left
     :font-size 16px
-  .top_menu li a
-    :background-image url(/images/top_menu.jpg) no-repeat
-    :font-size 16px
-    :padding 0 9px
+    a
+      :background url(/images/top_menu.jpg) no-repeat
+      :display block
+      :font-size 16px
+      :text-indent -9999px
+      :height 59px
     a.all_projects
       :background-position 0 0
+      :width 130px
     a.all_projects:hover
       :background-position 0 -59px
     a.blog
-      :background-position 130px 0
+      :background-position -130px 0
+      :width 70px
     a.blog:hover
-      :background-position 130 -59px
+      :background-position -130px -59px
     a.twitter
-      :background-position 200px 0
+      :background-position -200px 0
+      :width 102px
     a.twitter:hover
-      :background-position 200px -59px
+      :background-position -200px -59px
     a.add_project
-      :background-image url(/images/add_project_btn.jpg)
-      :background-repeat no-repeat
-      :clear both
-      :display block
-      :float right
-      :margin-top -5px
-      :text-indent -9999px
-      :width 204px
-      :height 31px
+      :background-position -302px 0px
+      :width 225px
+    a.add_project:hover
+      :background-position -302px -59px
+      :width 225px
+
   .logo a
     :background url(/images/dev2010_logo.gif) no-repeat
     :display block

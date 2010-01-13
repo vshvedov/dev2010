@@ -53,13 +53,37 @@ a {
   height: 129px; }
   #header .top_menu ul {
     float: right;
-    margin-bottom: 18px; }
+    margin-top: 37px; }
   #header .top_menu li {
     float: left;
     font-size: 16px; }
-  #header .top_menu li a {
-    font-size: 16px;
-    padding: 0 9px; }
+    #header .top_menu li a {
+      background: url(/images/top_menu.jpg) no-repeat;
+      display: block;
+      font-size: 16px;
+      text-indent: -9999px;
+      height: 59px; }
+    #header .top_menu li a.all_projects {
+      background-position: 0 0;
+      width: 130px; }
+    #header .top_menu li a.all_projects:hover {
+      background-position: 0 -59px; }
+    #header .top_menu li a.blog {
+      background-position: -130px 0;
+      width: 70px; }
+    #header .top_menu li a.blog:hover {
+      background-position: -130px -59px; }
+    #header .top_menu li a.twitter {
+      background-position: -200px 0;
+      width: 102px; }
+    #header .top_menu li a.twitter:hover {
+      background-position: -200px -59px; }
+    #header .top_menu li a.add_project {
+      background-position: -302px 0px;
+      width: 225px; }
+    #header .top_menu li a.add_project:hover {
+      background-position: -302px -59px;
+      width: 225px; }
   #header .logo a {
     background: url(/images/dev2010_logo.gif) no-repeat;
     display: block;
@@ -67,16 +91,6 @@ a {
     height: 125px;
     text-indent: -9999px;
     width: 273px; }
-  #header a.add_project {
-    background-image: url(/images/add_project_btn.jpg);
-    background-repeat: no-repeat;
-    clear: both;
-    display: block;
-    float: right;
-    margin-top: -5px;
-    text-indent: -9999px;
-    width: 204px;
-    height: 31px; }
   #header a.add_project:hover {
     background-position: 0 -31px; }
 
