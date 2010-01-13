@@ -212,6 +212,19 @@ a {
     margin-bottom: 18px;
     text-align: center; }
 
+.pagination {
+  margin-bottom: 18px; }
+  .pagination span {
+    float: left;
+    margin: 2px;
+    padding: 3px 6px 2px; }
+  .pagination a {
+    border: 1px solid #DDDDDD;
+    display: block;
+    float: left;
+    margin: 2px;
+    padding: 3px 6px 2px; }
+
 #footer {
   font-size: 12px;
   padding-bottom: 36px; }

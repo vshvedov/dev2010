@@ -4,4 +4,5 @@
   %ul.items
     -for project in @projects
       = render :partial => "projects/normal_item", :locals => { :project => project }
+.grid_8
   =will_paginate @projects, :prev_label => "← Туда", :next_label => "Сюда →"
