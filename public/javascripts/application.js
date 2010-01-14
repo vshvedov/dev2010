@@ -1,4 +1,5 @@
 $(function(){
+  Cufon.replace('.whoishere h4', {textShadow: '1px 1px rgba(214, 233, 184, 0.9)'});
   $(".item").mouseover(function(){
     $(this).find(".item_image").addClass("img_hover");
     $(this).find(".product_title").addClass("a_hover");

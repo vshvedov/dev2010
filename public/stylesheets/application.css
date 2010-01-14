@@ -123,13 +123,18 @@ a {
     background-position: 0 0; }
   #top_content h2.forwho {
     background-position: 0 -30px; }
-  #top_content h3.whoishere {
-    color: #ffffff;
-    font-size: 100px;
-    line-height: 120px;
+  #top_content .whoishere {
     text-align: center;
-    margin-right: 20px;
-    text-shadow: 0px -1px 0px #629314; }
+    margin-right: 20px; }
+    #top_content .whoishere h3 {
+      color: #ffffff;
+      font-size: 100px;
+      line-height: 120px;
+      text-shadow: 0px -1px 0px #629314; }
+    #top_content .whoishere h4 {
+      color: #385410;
+      font-size: 30px;
+      text-shadow: 0px 1px 0px #D6E9B8; }
 
 #top_content_small {
   overflow: hidden;
