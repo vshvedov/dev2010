@@ -1,9 +1,8 @@
 - title "Проект " + @project.name
 .box
   .box_header
-    .grid_5
+    .grid_8
       %h1=h yield(:title)
-    .grid_3
     .hr
     .grid_8
       =link_to @project.site_url, @project.site_url
@@ -28,4 +27,7 @@
 - content_for :top_content do
   = render :partial => "layouts/top_small", :locals => { :project => @allprojects }
 - content_for :side_bar do
+  .added
+    %span
+      = @project.created_at.strftime("%d.%m.%y")
   = render :partial => "layouts/banners"

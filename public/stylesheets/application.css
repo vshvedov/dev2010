@@ -115,7 +115,7 @@ a {
     background: url(/images/readmore_btn.jpg) no-repeat;
     display: block;
     text-indent: -9999px;
-    margin: 28px 0 0 20px;
+    margin: 28px 0 0 180px;
     width: 108px;
     height: 21px; }
   #top_content a.readmore:hover {
@@ -285,6 +285,18 @@ a {
     margin-right: 10px; }
 #content .side_bar {
   width: 280px; }
+  #content .side_bar .added {
+    background: url(/images/added_bg.jpg) no-repeat;
+    margin-bottom: 36px;
+    padding-right: 10px;
+    text-align: right;
+    width: 270px;
+    height: 48px; }
+    #content .side_bar .added span {
+      color: #ffffff;
+      font-size: 36px;
+      line-height: 46px;
+      text-shadow: 0px -1px 0px #629314; }
   #content .side_bar ul.banners li {
     margin-bottom: 18px;
     text-align: center; }
