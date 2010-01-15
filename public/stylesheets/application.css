@@ -353,16 +353,23 @@ fieldset {
       border: none;
       cursor: pointer;
       display: block;
-      float: left;
+      float: right;
       text-indent: -9999px;
       width: 160px;
       height: 39px; }
     fieldset .field.button .create_project_btn:hover {
       background-position: 0 -39px; }
     fieldset .field.button .cancel_link {
+      background: url(/images/create_project_btn.jpg) no-repeat -160px 0;
+      display: block;
       float: right;
       line-height: 35px;
-      margin-left: 20px; }
+      margin-right: 20px;
+      text-indent: -9999px;
+      width: 160px;
+      height: 39px; }
+    fieldset .field.button .cancel_link:hover {
+      background-position: -160px -39px; }
   fieldset #recaptcha_image {
     background: #fff;
     float: left;
