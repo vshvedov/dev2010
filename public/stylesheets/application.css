@@ -196,6 +196,26 @@ a {
     #content .main .box h2.all_projects {
       background-position: 0 -94px;
       width: 254px; }
+    #content .main .box .box_header {
+      background: url(/images/box_header_bg.jpg) no-repeat;
+      border-bottom: 1px solid #989898;
+      overflow: hidden;
+      padding: 5px 0 10px 0;
+      margin-bottom: 18px; }
+      #content .main .box .box_header h1 {
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 22px;
+        padding: 0 0 5px 0; }
+      #content .main .box .box_header .hr {
+        background: url(/images/hr_2.gif) repeat-x;
+        margin: 0 10px 5px 10px; }
+  #content .main .box_2 {
+    background: url(/images/box_bg_2.gif) repeat-y;
+    border-top: 1px solid #D9D9D9;
+    margin-bottom: 12px;
+    padding-top: 18px;
+    overflow: hidden; }
   #content .main ul.items {
     margin-right: -20px;
     padding: 0 10px; }
@@ -230,6 +250,10 @@ a {
 #content .project_main_info {
   margin-bottom: 36px;
   overflow: hidden; }
+  #content .project_main_info img {
+    background: #ffffff;
+    border: solid 1px #C6C2C8;
+    padding: 2px; }
   #content .project_main_info .social_btn {
     background: url(/images/social_buttons.gif) no-repeat;
     display: block;
