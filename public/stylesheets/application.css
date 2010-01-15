@@ -111,6 +111,15 @@ a {
   #top_content .grid_12 {
     background: url(/images/top_content_bg.jpg) no-repeat;
     height: 188px; }
+  #top_content a.readmore {
+    background: url(/images/readmore_btn.jpg) no-repeat;
+    display: block;
+    text-indent: -9999px;
+    margin: 28px 0 0 20px;
+    width: 108px;
+    height: 21px; }
+  #top_content a.readmore:hover {
+    background-position: 0 -21px; }
   #top_content h2 {
     background: url(/images/main_icons.gif) no-repeat;
     color: #444751;
